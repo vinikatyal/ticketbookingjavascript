@@ -1,0 +1,172 @@
+.wrapper {
+    display: table; // See FelipeAls comment below
+    width: 300px;
+}
+
+.left {
+    display: table-cell;
+    width: 500px;
+  
+}
+
+.right {
+    display: table-cell;
+    width: 500px;
+ 
+}
+.center
+{
+    text-align: center;
+}
+
+
+body {
+   
+    font-family: 'trebuchet MS', 'Lucida sans', Arial;
+    font-size: 18px;
+    color: #444;
+}
+
+table {
+    *border-collapse: collapse; /* IE7 and lower */
+    border-spacing: 0;
+    width: 100%;    
+}
+
+.bordered {
+    border: solid #ccc 1px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 1px 1px #ccc; 
+    -moz-box-shadow: 0 1px 1px #ccc; 
+    box-shadow: 0 1px 1px #ccc;         
+}
+
+.bordered tr:hover {
+    background: #fbf8e9;
+    -o-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;     
+}    
+    
+.bordered td, .bordered th {
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;    
+}
+
+.bordered th {
+    background-color: #dce9f9;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ebf3fc), to(#dce9f9));
+    background-image: -webkit-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image:    -moz-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image:     -ms-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image:      -o-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image:         linear-gradient(top, #ebf3fc, #dce9f9);
+    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset; 
+    -moz-box-shadow:0 1px 0 rgba(255,255,255,.8) inset;  
+    box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;        
+    border-top: none;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5); 
+}
+
+.bordered td:first-child, .bordered th:first-child {
+    border-left: none;
+}
+
+.bordered th:first-child {
+    -moz-border-radius: 6px 0 0 0;
+    -webkit-border-radius: 6px 0 0 0;
+    border-radius: 6px 0 0 0;
+}
+
+.bordered th:last-child {
+    -moz-border-radius: 0 6px 0 0;
+    -webkit-border-radius: 0 6px 0 0;
+    border-radius: 0 6px 0 0;
+}
+
+.bordered th:only-child{
+    -moz-border-radius: 6px 6px 0 0;
+    -webkit-border-radius: 6px 6px 0 0;
+    border-radius: 6px 6px 0 0;
+}
+
+.bordered tr:last-child td:first-child {
+    -moz-border-radius: 0 0 0 6px;
+    -webkit-border-radius: 0 0 0 6px;
+    border-radius: 0 0 0 6px;
+}
+
+.bordered tr:last-child td:last-child {
+    -moz-border-radius: 0 0 6px 0;
+    -webkit-border-radius: 0 0 6px 0;
+    border-radius: 0 0 6px 0;
+}
+
+#holder{    
+height:300px;    
+width:560px;
+background-color:#F5F5F5;
+border:1px solid #A4A4A4;
+margin-left:10px;   
+}
+#place {
+position:relative;
+margin:7px;
+}
+#place a{
+font-size:0.6em;
+}
+#place li
+{
+ list-style: none outside none;
+ position: absolute;   
+}    
+#place li:hover
+{
+background-color:yellow;      
+} 
+#place .seat{
+
+height:33px;
+width:33px;
+display:block;   
+}
+#place .selectedSeat
+{
+    color: white;
+       background-color: blue;
+ 
+/*background-image:url("images/booked_seat_img.gif");          */
+}
+
+#place .selectedSeatReserved
+{
+    color: white;
+       background-color: red;
+ 
+/*background-image:url("images/booked_seat_img.gif");          */
+}
+#place .selectingSeat
+{ 
+    color: white;
+       background-color: green;
+/*background-image:url("images/selected_seat_img.gif");        */
+
+
+}
+#place .row-3, #place .row-4{
+margin-top:10px;
+}
+#seatDescription li{
+verticle-align:middle;    
+list-style: none outside none;
+padding-left:35px;
+height:35px;
+float:left;
+}
